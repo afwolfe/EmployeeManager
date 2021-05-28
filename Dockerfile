@@ -1,8 +1,7 @@
 FROM adoptopenjdk:16-jre
-#from liberica-openjre-alpine-musl:16
 
-WORKDIR /app
-COPY ./build/libs/employeemanager-0.0.1-SNAPSHOT.jar /app
+WORKDIR /employee-manager-backend
+COPY ./build/libs/employeemanager-0.0.1-SNAPSHOT.jar /employee-manager-backend
 
 EXPOSE 8080
 
